@@ -8,6 +8,7 @@ return {
       'diff',
       'html',
       'css',
+      'svelte',
       'lua',
       'luadoc',
       'markdown',
