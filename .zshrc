@@ -37,7 +37,7 @@ setopt hist_find_no_dups
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:*' menu no
-zstyle ':completion:*:*:(ssh|scp|rsync|ping):*:*' known-hosts-files ~/.ssh/known_hosts ~/.ssh/generated_hosts
+zstyle ':completion:*:*:(ssh|scp|rsync|ping|host):*:*' known-hosts-files ~/.ssh/known_hosts ~/.ssh/generated_hosts
 
 # Aliases
 alias ls='eza'
