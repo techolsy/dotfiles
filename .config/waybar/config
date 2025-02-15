@@ -1,0 +1,69 @@
+{
+    "layer": "top",
+    "modules-left": [
+        "custom/logo",
+        "tray",
+        "hyprland/language"
+    ],
+    "modules-center": [
+        "hyprland/workspaces"
+    ],
+    "modules-right": [
+        "clock",
+        "wireplumber",
+        "custom/pacman",
+        "memory",
+        "disk"
+    ],
+    "custom/logo": {
+      "format": "󰣇",
+      "on-click": "$HOME/.local/bin/powermenu",
+      "tooltip": false
+    },
+    "custom/pacman": {
+        "format": "󰏔 {}",
+        "interval": 600,
+        "exec": "checkupdates | wc -l",
+        "exec-if": "exit 0",
+        "tooltip": false
+    },
+    "hyprland/workspaces": {
+        "on-click": "activate",
+        "format": "{icon}",
+        "all-outputs": true,
+        "format-icons": {
+            "default": "󰽤",
+            "active": "󰽢"
+        },
+        "sort-by-number": true
+    },
+    "hyprland/language": {
+      "format": "{}"
+    },
+    "disk": {
+        "interval": 30,
+        "format": "󱊖 {percentage_used}%",
+        "path": "/"
+    },
+    "memory": {
+        "interval": 5,
+        "format": "󰍛 {}%",
+        "max-length": 10
+    },
+    "tray": {
+        "spacing": 10
+    },
+    "clock": {
+        "tooltip-format": "<tt>{calendar}</tt>",
+        "format-alt": "󰃭  {:%a, %d %b %Y}",
+        "format": "  {:%I:%M %p}"
+    },
+    "wireplumber": {
+        "format": "{icon} {volume}",
+        "format-muted": "󰸈",
+        "format-icons": ["󰕿", "", "",],
+        "on-click": "$HOME/.local/bin/switch_sink",
+        "max-volume": 100,
+        "scroll-step": 1
+    }
+}

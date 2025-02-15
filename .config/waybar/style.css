@@ -1,0 +1,82 @@
+@import "mocha.css";
+
+* {
+  border: none;
+  border-radius: 0;
+  min-height: 24px;
+  font-family: FiraCode Nerd Font;
+  font-size: 14px;
+  color: @text;
+}
+
+window#waybar {
+  background: transparent;
+}
+
+window#waybar.hidden {
+  opacity: 0.2;
+}
+
+#workspaces {
+  background-color: transparent;
+}
+
+#window {
+  margin-top: 10px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 26px;
+  transition: none;
+  color: transparent;
+  background: transparent;
+}
+
+#workspaces {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  border-radius: 26px;
+  background-color: @base;
+}
+
+#workspaces button {
+  transition: none;
+  color: @mantle;
+  background: transparent;
+  font-size: 16px;
+}
+
+#workspaces button.focused {
+  color: @crust;
+}
+
+#workspaces button:hover {
+  transition: none;
+  text-shadow: inherit;
+  box-shadow: inherit;
+  color: @mantle;
+}
+
+#custom-logo,
+#language,
+#disk,
+#memory,
+#wireplumber,
+#custom-pacman,
+#clock,
+#tray {
+  border-radius: 26px;
+  margin-top: 10px;
+  margin-left: 4px;
+  margin-right: 4px;
+  padding-right: 16px;
+  padding-left: 16px;
+  background-color: @base;
+}
+
+#disk {
+  margin-right: 12px;
+}
+
+#custom-logo {
+  margin-left: 12px;
+}
