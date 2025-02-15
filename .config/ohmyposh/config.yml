@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json
+
+palette:
+  overlay0: "#6c7086"
+  red: "#f38ba8"
+  surface0: "#313244"
+  surface2: "#585b70"
+  text: "#cdd6f4"
+console_title_template: "{{ .Shell }} in {{ .Folder }}"
+blocks:
+- type: rprompt
+  overflow: hidden
+  segments:
+  - properties:
+      cache_duration: none
+      style: round
+    foreground: p:text
+    background: transparent
+    type: executiontime
+    style: plain
+- type: prompt
+  alignment: left
+  segments:
+  - properties:
+      cache_duration: none
+    foreground: p:text
+    background: p:surface2
+    type: os
+    style: accordion
+  - properties:
+      cache_duration: none
+      style: letter
+    foreground: p:text
+    powerline_symbol: 
+    background: p:overlay0
+    type: path
+    style: accordion
+  - properties:
+    type: python
+    style: powerline
+    powerline_symbol: 
+    foreground: "#100e23"
+    background: "#906cff"
+    template: "  {{ .Full }} "
+  - properties:
+      cache_duration: none
+      fetch_status: true
+    foreground: p:text
+    powerline_symbol: 
+    background: p:surface0
+    type: git
+    style: accordion
+version: 3
+final_space: true
