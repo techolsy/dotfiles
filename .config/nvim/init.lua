@@ -11,15 +11,15 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
-	require 'plugins.nvim-tree',
-	require 'plugins.catppuccin',
-	require 'plugins.barbar',
-	require 'plugins.lualine',
-	require 'plugins.treesitter',
-	require 'plugins.telescope',
-	require 'plugins.lsp',
-	require 'plugins.autocompletion',
-	require 'plugins.blankline',
+  require 'plugins.nvim-tree',
+  require 'plugins.catppuccin',
+  require 'plugins.barbar',
+  require 'plugins.lualine',
+  require 'plugins.treesitter',
+  require 'plugins.telescope',
+  require 'plugins.lsp',
+  require 'plugins.autocompletion',
+  require 'plugins.blankline',
   require 'plugins.alpha',
   require 'plugins.auto-pairs',
   require 'plugins.which-key'
