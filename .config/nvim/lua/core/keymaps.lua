@@ -30,3 +30,6 @@ vim.keymap.set('n', '<leader>x', ':BufferClose<CR>', opts)
 -- Better indenting
 vim.keymap.set('v', '<', '<gv', opts)
 vim.keymap.set('v', '>', '>gv', opts)
+
+-- Binds for lazy
+vim.keymap.set('n', '<leader>l', ':Lazy<CR>', opts)
