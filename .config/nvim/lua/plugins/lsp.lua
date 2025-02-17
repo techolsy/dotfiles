@@ -176,6 +176,7 @@ return {
         -- ts_ls = {},
         --
         svelte = {},
+        gopls = {},
         ts_ls = {},
 				pyright= {},
         lua_ls = {
