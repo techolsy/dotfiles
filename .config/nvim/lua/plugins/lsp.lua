@@ -178,7 +178,7 @@ return {
         svelte = {},
         gopls = {},
         ts_ls = {},
-				pyright= {},
+        pyright= {},
         lua_ls = {
           -- cmd = { ... },
           -- filetypes = { ... },
@@ -190,7 +190,7 @@ return {
               },
               -- You can toggle below to ignore Lua_LS's noisy `missing-fields` warnings
               -- diagnostics = { disable = { 'missing-fields' } },
-						runtime = { version = 'LuaJIT' },
+            runtime = { version = 'LuaJIT' },
             workspace = {
               checkThirdParty = false,
               library = {
