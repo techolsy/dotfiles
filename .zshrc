@@ -18,6 +18,8 @@ autoload -U compinit && compinit
 
 eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/config.yml)"
 
+if [[ ":$FPATH:" != *":/home/flax/.zsh/completions:"* ]]; then export FPATH="/home/flax/.zsh/completions:$FPATH"; fi
+
 # Binds
 bindkey -e
 
@@ -51,4 +53,4 @@ alias mc='mcli'
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 
-export PATH=$HOME/.local/bin:$PATH
+export PATH=$HOME/.local/bin:/home/flax/.deno/bin:$PATH
