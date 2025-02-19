@@ -177,6 +177,7 @@ return {
         --
         svelte = {},
         gopls = {},
+        denols = {},
         ts_ls = {},
         pyright= {},
         lua_ls = {
