@@ -54,3 +54,10 @@ eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 
 export PATH=$HOME/.local/bin:/home/flax/.deno/bin:$PATH
+
+# bun completions
+[ -s "/home/flax/.bun/_bun" ] && source "/home/flax/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
