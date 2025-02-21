@@ -18,7 +18,7 @@ require('lazy').setup({
   require 'plugins.treesitter',
   require 'plugins.telescope',
   require 'plugins.lsp',
-  require 'plugins.autocompletion',
+  require 'plugins.nvim-cmp',
   require 'plugins.blankline',
   require 'plugins.alpha',
   require 'plugins.auto-pairs',
