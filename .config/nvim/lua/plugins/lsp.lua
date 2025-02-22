@@ -179,7 +179,8 @@ return {
         gopls = {},
         denols = {},
         ts_ls = {},
-        pyright= {},
+        pyright = {},
+        jsonls = {},
         lua_ls = {
           -- cmd = { ... },
           -- filetypes = { ... },
