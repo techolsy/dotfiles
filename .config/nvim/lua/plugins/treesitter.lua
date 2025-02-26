@@ -4,6 +4,8 @@ return {
     main = 'nvim-treesitter.configs',
 		opts = {
       ensure_installed = {
+      'yaml',
+      'typescript',
       'bash',
       'diff',
       'html',
