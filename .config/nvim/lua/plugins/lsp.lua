@@ -176,6 +176,9 @@ return {
         -- ts_ls = {},
         --
         svelte = {},
+        ansiblels = {
+          filetypes = {'yml', 'yaml'}
+        },
         gopls = {},
         denols = {},
         ts_ls = {},
