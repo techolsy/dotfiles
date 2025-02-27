@@ -176,6 +176,7 @@ return {
         -- ts_ls = {},
         --
         clangd = {},
+        rust_analyzer = {},
         svelte = {},
         ansiblels = {
           filetypes = {'yml', 'yaml'}
