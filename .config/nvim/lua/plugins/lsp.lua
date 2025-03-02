@@ -182,6 +182,7 @@ return {
           filetypes = {'yml', 'yaml'}
         },
         gopls = {},
+        terraformls = {},
         denols = {},
         ts_ls = {},
         pyright = {},
