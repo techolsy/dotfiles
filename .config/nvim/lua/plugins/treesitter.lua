@@ -15,7 +15,8 @@ return {
       'luadoc',
       'markdown',
       'rust',
-      'markdown_inline'
+      'markdown_inline',
+      'terraform',
     },
       auto_install = true,
       highlight = {
