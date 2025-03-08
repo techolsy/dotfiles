@@ -186,6 +186,7 @@ return {
         denols = {},
         ts_ls = {},
         pyright = {},
+        bashls = {},
         jsonls = {},
         lua_ls = {
           -- cmd = { ... },
