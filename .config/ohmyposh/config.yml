@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json
+$schema: https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json
 
 palette:
   overlay0: "#6c7086"
@@ -26,7 +26,7 @@ blocks:
     foreground: p:text
     background: p:surface2
     type: os
-    style: accordion
+    style: powerline
   - properties:
       cache_duration: none
       style: letter
@@ -34,7 +34,7 @@ blocks:
     powerline_symbol: 
     background: p:overlay0
     type: path
-    style: accordion
+    style: powerline
   - properties:
     type: python
     style: powerline
