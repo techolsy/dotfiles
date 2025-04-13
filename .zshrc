@@ -53,7 +53,8 @@ alias mc='mcli'
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 
-export PATH=$HOME/.local/bin:/home/flax/.deno/bin:$PATH
+export PATH="$HOME/go/bin:$PATH"
+export PATH="$HOME/.local/bin:/home/flax/.deno/bin:$PATH"
 
 # bun completions
 [ -s "/home/flax/.bun/_bun" ] && source "/home/flax/.bun/_bun"
