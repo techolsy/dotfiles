@@ -143,8 +143,28 @@ return {
       --   for type, icon in pairs(signs) do
       --     diagnostic_signs[vim.diagnostic.severity[type]] = icon
       --   end
-      --   vim.diagnostic.config { signs = { text = diagnostic_signs } }
-      -- end
+      --   vim.diagnostic.config({
+      --     virtual_text = {
+      --       prefix = '●',
+      --       spacing = 2,
+      --     },
+      --     signs = {
+      --       text = { [vim.diagnostic.severity.ERROR] = '', [vim.diagnostic.severity.WARN] = '', [vim.diagnostic.severity.INFO] = '', [vim.diagnostic.severity.HINT] = '' },
+      --     },
+      --     underline = true,
+      --     update_in_insert = false,
+      --     severity_sort = true,
+      --   })
+      vim.diagnostic.config({
+        virtual_text = {
+          prefix = '●',  -- or "■", "▶", "" (empty string for no prefix)
+          spacing = 2,
+        },
+        signs = true,
+        underline = true,
+        update_in_insert = false,
+        severity_sort = true,
+      })
 
       -- LSP servers and clients are able to communicate to each other what features they support.
       --  By default, Neovim doesn't support everything that is in the LSP specification.
