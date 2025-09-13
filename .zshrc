@@ -48,6 +48,7 @@ alias la='eza -la'
 alias vi='nvim'
 alias vim='nvim'
 alias mc='mcli'
+alias s3='s3cmd'
 
 # Shell integration
 eval "$(fzf --zsh)"
